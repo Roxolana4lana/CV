@@ -7,14 +7,12 @@ export default function About() {
         <div className="textImage">
           <h1>About me</h1>
         </div>
-
         <div className="pAbout">
           <p>
-            I am self educated front end developer with almost one year
-            experience. <br />
-            For most part of the time I create my projects with react, because,
-            to my opinion, react is really powerfull tool and it helps a lot in
-            creation of functional as well as beautiful projects.
+            I am self educated front end developer with almost year&apos;s
+            experience. For most part of the time I create my projects with
+            react, because, to my opinion, react is really powerfull tool and it
+            helps a lot in creation of functional as well as beautiful projects.
           </p>
         </div>
         <div className="textImage">

@@ -21,7 +21,7 @@ export default function Footer() {
   return (
     <div className="Footer">
       <div className="textImage">
-        <h1>Contacts</h1>
+        <h1>Contact</h1>
       </div>
       <div className="boxFooter">
         <Box className="myImage" />
@@ -36,10 +36,6 @@ export default function Footer() {
           </div>
           <div className="contactInfo">
             <i className="fas fa-phone" style={{ marginRight: "1rem" }} />
-            501556168
-          </div>
-          <div className="contactInfo">
-            <i className="fab fa-linkedin" style={{ marginRight: "1rem" }} />
             501556168
           </div>
         </div>

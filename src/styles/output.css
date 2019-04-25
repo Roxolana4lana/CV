@@ -14,7 +14,7 @@
   text-align: center;
   padding: 7rem; }
   .App .Main {
-    background-color: rgba(111, 99, 126, 0.568);
+    background-color: rgba(182, 167, 201, 0.568);
     text-align: center;
     padding: 6rem 0;
     width: 100vw;
@@ -81,8 +81,8 @@
         margin-top: -1rem;
         margin-bottom: 2rem; } }
     .NavigationSmall a:hover {
-      color: rgba(61, 153, 112, 0.521);
-      transition: 0.8s linear; }
+      text-shadow: 0.2rem 0.1px 0.1px rgba(61, 153, 112, 0.685);
+      transition: 0.4s linear; }
 
 .Navigation {
   width: 100%;
@@ -114,8 +114,8 @@
         font-size: 2rem;
         padding: 1rem 0; } }
     .Navigation a:hover {
-      color: rgba(61, 153, 112, 0.521);
-      transition: 0.8s linear; }
+      text-shadow: 0.2rem 0.1px 0.1px rgba(61, 153, 112, 0.685);
+      transition: 0.5s linear; }
   .Navigation .active {
     color: rgba(187, 156, 223, 0.767);
     transition: 0.5s linear; }
@@ -154,6 +154,9 @@
         .About .uAbout ul {
           margin-left: 20rem;
           font-size: 1.5rem; } }
+    @media (min-width: 312px) {
+      .About .uAbout {
+        margin-top: 1rem; } }
     @media (min-width: 1180px) {
       .About .uAbout {
         width: 60rem; } }

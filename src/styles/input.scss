@@ -18,7 +18,7 @@
   padding: 7rem;
 
   .Main {
-    background-color: rgba(111, 99, 126, 0.568);
+    background-color: rgba(182, 167, 201, 0.568);
     text-align: center;
     padding: 6rem 0;
     width: 100vw;
@@ -91,8 +91,8 @@
       margin-bottom: 2rem;
     }
     &:hover {
-      color: rgba(61, 153, 112, 0.521);
-      transition: 0.8s linear;
+      text-shadow: 0.2rem 0.1px 0.1px rgba(61, 153, 112, 0.685);
+      transition: 0.4s linear;
     }
   }
 }
@@ -127,8 +127,8 @@
       padding: 1rem 0;
     }
     &:hover {
-      color: rgba(61, 153, 112, 0.521);
-      transition: 0.8s linear;
+      text-shadow: 0.2rem 0.1px 0.1px rgba(61, 153, 112, 0.685);
+      transition: 0.5s linear;
     }
   }
   .active {
@@ -172,6 +172,9 @@
         margin-left: 20rem;
         font-size: 1.5rem;
       }
+    }
+    @include breakpoint(s) {
+      margin-top: 1rem;
     }
     @include breakpoint(l) {
       width: 60rem;
