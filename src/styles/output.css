@@ -1,0 +1,385 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Franklin", sans-serif; }
+  * a {
+    text-decoration: none; }
+
+.App {
+  background-image: url("https://images.pexels.com/photos/1406863/pexels-photo-1406863.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  padding: 7rem; }
+  .App .Main {
+    background-color: rgba(111, 99, 126, 0.568);
+    text-align: center;
+    padding: 6rem 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 14rem; }
+    @media (min-width: 1180px) {
+      .App .Main {
+        padding-top: 10rem; } }
+    .App .Main h1 {
+      color: white; }
+      @media (min-width: 312px) {
+        .App .Main h1 {
+          font-size: 4rem; } }
+      @media (min-width: 696px) {
+        .App .Main h1 {
+          font-size: 5rem; } }
+      @media (min-width: 1180px) {
+        .App .Main h1 {
+          font-size: 5rem; } }
+    .App .Main h3 {
+      font-size: 2rem;
+      color: #4e3b64;
+      font-family: "Pacifico", cursive;
+      color: white; }
+
+.navBar {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  color: #3d9970;
+  font-size: 2rem;
+  z-index: 10; }
+  .navBar i {
+    cursor: pointer; }
+
+.closeButton {
+  display: inline-block;
+  margin: 1rem 1rem 0 0; }
+
+.NavigationSmall {
+  width: 100%;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #4e3b64;
+  color: white;
+  text-align: right;
+  z-index: 10; }
+  .NavigationSmall .active {
+    color: rgba(187, 156, 223, 0.767);
+    transition: 0.5s linear; }
+  .NavigationSmall a {
+    cursor: pointer; }
+    @media (min-width: 312px) {
+      .NavigationSmall a {
+        font-size: 2rem;
+        display: block;
+        text-align: center;
+        padding: 0;
+        margin-top: -1rem;
+        margin-bottom: 2rem; } }
+    .NavigationSmall a:hover {
+      color: rgba(61, 153, 112, 0.521);
+      transition: 0.8s linear; }
+
+.Navigation {
+  width: 100%;
+  height: 4rem;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #4e3b64;
+  color: white;
+  text-align: right;
+  z-index: 10;
+  padding: 0.8rem; }
+  .Navigation a {
+    cursor: pointer;
+    padding: 2rem 0; }
+    @media (min-width: 312px) {
+      .Navigation a {
+        margin: 1rem 1rem;
+        font-size: 1.5rem; } }
+    @media (min-width: 696px) {
+      .Navigation a {
+        margin: 2rem 1rem;
+        font-size: 2rem;
+        padding: 1rem 0; } }
+    @media (min-width: 1180px) {
+      .Navigation a {
+        margin: 1rem 2rem;
+        font-size: 2rem;
+        padding: 1rem 0; } }
+    .Navigation a:hover {
+      color: rgba(61, 153, 112, 0.521);
+      transition: 0.8s linear; }
+  .Navigation .active {
+    color: rgba(187, 156, 223, 0.767);
+    transition: 0.5s linear; }
+
+.About {
+  height: 100%;
+  padding: 3rem 0rem 0 1rem; }
+  @media (min-width: 696px) {
+    .About {
+      padding: 4rem 1rem 0 2rem;
+      height: 100%; } }
+  @media (min-width: 1180px) {
+    .About {
+      padding: 4rem 2rem;
+      height: 100vh; } }
+  .About .pAbout {
+    color: #4e3b64; }
+    .About .pAbout p {
+      font-size: 1.2rem; }
+    @media (min-width: 312px) {
+      .About .pAbout {
+        padding-bottom: 1rem; } }
+    @media (min-width: 696px) {
+      .About .pAbout {
+        padding-bottom: 1rem; } }
+    @media (min-width: 1180px) {
+      .About .pAbout {
+        width: 40rem;
+        padding-left: 2rem; } }
+  .About .uAbout {
+    color: #4e3b64; }
+    .About .uAbout ul {
+      list-style: none;
+      font-size: 1.2rem; }
+      @media (min-width: 1180px) {
+        .About .uAbout ul {
+          margin-left: 20rem;
+          font-size: 1.5rem; } }
+    @media (min-width: 1180px) {
+      .About .uAbout {
+        width: 60rem; } }
+  .About .myInfo {
+    text-align: right;
+    padding-right: 3rem; }
+
+.textImage h1 {
+  background-image: url("https://images.pexels.com/photos/1406863/pexels-photo-1406863.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-clip: text;
+  background-position: center bottom;
+  color: transparent;
+  -webkit-background-clip: text;
+  font-size: 7rem; }
+  @media (min-width: 312px) {
+    .textImage h1 {
+      font-size: 4rem; } }
+  @media (min-width: 696px) {
+    .textImage h1 {
+      font-size: 5.5rem; } }
+  @media (min-width: 1180px) {
+    .textImage h1 {
+      font-size: 7rem;
+      margin-top: 1rem; } }
+.textImage h2 {
+  font-size: 3rem;
+  color: #4e3b64;
+  display: inline; }
+  @media (min-width: 1180px) {
+    .textImage h2 {
+      font-size: 4rem; } }
+
+.wrapper {
+  display: grid; }
+  @media (min-width: 312px) {
+    .wrapper {
+      grid-template-columns: 1fr; } }
+  @media (min-width: 696px) {
+    .wrapper {
+      grid-template-columns: 1fr; } }
+  @media (min-width: 1180px) {
+    .wrapper {
+      grid-template-columns: 1fr 1fr; } }
+
+.Projects {
+  position: relative;
+  padding-top: 5rem;
+  color: white;
+  z-index: 3;
+  width: 100vw;
+  text-align: center; }
+  .Projects .flexButtons {
+    display: flex; }
+  .Projects .textImage {
+    text-align: center; }
+    @media (min-width: 1180px) {
+      .Projects .textImage {
+        text-align: right;
+        margin-right: 10rem;
+        margin-bottom: 3rem; } }
+  .Projects .mainData {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    color: #4e3b64;
+    border: 0.1rem solid rgba(78, 59, 100, 0.089); }
+
+.theImage {
+  position: relative;
+  height: 20rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s; }
+  @media (min-width: 312px) {
+    .theImage {
+      margin: 1rem 0; } }
+  @media (min-width: 696px) {
+    .theImage {
+      margin: 2rem 4rem; } }
+  @media (min-width: 1180px) {
+    .theImage {
+      margin: 2rem; } }
+  .theImage:hover:after {
+    opacity: 1; }
+  .theImage:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    word-wrap: break-word;
+    background-color: rgba(78, 59, 100, 0.815);
+    padding: 2rem 0;
+    opacity: 0;
+    transition: 0.8s linear;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold; }
+
+.mainButton {
+  background-color: transparent;
+  border: 2px solid #4e3b64;
+  border-radius: 0.6em;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #4e3b64 inset, 0 0 0 0 #4e3b64;
+  transition: all 0.8s ease-in-out;
+  margin: 0 2rem; }
+  .mainButton:hover {
+    box-shadow: 0 0 10px 0 #4e3b64 inset, 0 0 10px 4px #4e3b64;
+    color: #4e3b64; }
+
+.Footer {
+  position: relative;
+  padding-top: 5rem;
+  background-color: #4e3b64;
+  color: white;
+  z-index: 3;
+  width: 100vw;
+  text-align: center; }
+  @media (min-width: 312px) {
+    .Footer {
+      height: 100%; } }
+  @media (min-width: 696px) {
+    .Footer {
+      height: 100%; } }
+  @media (min-width: 1180px) {
+    .Footer {
+      height: 100vh; } }
+  .Footer .boxFooter {
+    display: flex; }
+    @media (min-width: 312px) {
+      .Footer .boxFooter {
+        flex-direction: column; } }
+    @media (min-width: 696px) {
+      .Footer .boxFooter {
+        flex-direction: column; } }
+    @media (min-width: 1180px) {
+      .Footer .boxFooter {
+        flex-direction: row; } }
+  .Footer .myImage {
+    background-image: url("myImage.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%; }
+    @media (min-width: 312px) {
+      .Footer .myImage {
+        margin: 2rem auto;
+        height: 20rem;
+        width: 20rem; } }
+    @media (min-width: 696px) {
+      .Footer .myImage {
+        margin: 2rem auto;
+        height: 24rem;
+        width: 24rem; } }
+    @media (min-width: 1180px) {
+      .Footer .myImage {
+        margin: 0 8rem;
+        height: 20rem;
+        width: 20rem;
+        z-index: 10; } }
+  @media (min-width: 696px) {
+    .Footer .textImage {
+      margin-bottom: 2rem; } }
+  @media (min-width: 1180px) {
+    .Footer .textImage {
+      text-align: right;
+      margin-right: 10rem;
+      margin-bottom: 3rem; } }
+  .Footer .myContacts {
+    position: relative; }
+    @media (min-width: 312px) {
+      .Footer .myContacts {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.4rem;
+        margin: 3rem 0; } }
+    @media (min-width: 696px) {
+      .Footer .myContacts {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.8rem;
+        width: 35rem;
+        margin: 3rem auto; } }
+    @media (min-width: 1180px) {
+      .Footer .myContacts {
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        margin: 4rem;
+        width: 35rem; } }
+    .Footer .myContacts .contactInfo {
+      width: 100%; }
+      @media (min-width: 312px) {
+        .Footer .myContacts .contactInfo {
+          margin-bottom: 2rem; } }
+      @media (min-width: 696px) {
+        .Footer .myContacts .contactInfo {
+          margin-bottom: 2rem; } }
+      @media (min-width: 1180px) {
+        .Footer .myContacts .contactInfo {
+          margin-bottom: 1rem; } }
+    .Footer .myContacts a {
+      text-decoration: none;
+      color: white; }
+  .Footer .rights {
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    bottom: 0rem; }
+    @media (min-width: 312px) {
+      .Footer .rights {
+        margin-top: 1rem; } }
+
+/*# sourceMappingURL=output.css.map */

@@ -1,0 +1,437 @@
+@import "responsive";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Franklin", sans-serif;
+  a {
+    text-decoration: none;
+  }
+}
+.App {
+  background-image: url("https://images.pexels.com/photos/1406863/pexels-photo-1406863.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  padding: 7rem;
+
+  .Main {
+    background-color: rgba(111, 99, 126, 0.568);
+    text-align: center;
+    padding: 6rem 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include breakpoint(l) {
+      padding-top: 10rem;
+    }
+    padding-top: 14rem;
+    h1 {
+      color: white;
+      @include breakpoint(s) {
+        font-size: 4rem;
+      }
+      @include breakpoint(m) {
+        font-size: 5rem;
+      }
+      @include breakpoint(l) {
+        font-size: 5rem;
+      }
+    }
+    h3 {
+      font-size: 2rem;
+      color: rgb(78, 59, 100);
+      font-family: "Pacifico", cursive;
+      color: white;
+    }
+  }
+}
+.navBar {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  color: #3d9970;
+  font-size: 2rem;
+  z-index: 10;
+
+  i {
+    cursor: pointer;
+  }
+}
+.closeButton {
+  display: inline-block;
+  margin: 1rem 1rem 0 0;
+}
+.NavigationSmall {
+  width: 100%;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(78, 59, 100);
+  color: white;
+  text-align: right;
+  z-index: 10;
+  .active {
+    color: rgba(187, 156, 223, 0.767);
+    transition: 0.5s linear;
+  }
+  a {
+    cursor: pointer;
+    @include breakpoint(s) {
+      font-size: 2rem;
+      display: block;
+      text-align: center;
+      padding: 0;
+      margin-top: -1rem;
+      margin-bottom: 2rem;
+    }
+    &:hover {
+      color: rgba(61, 153, 112, 0.521);
+      transition: 0.8s linear;
+    }
+  }
+}
+.Navigation {
+  width: 100%;
+  height: 4rem;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(78, 59, 100);
+  color: white;
+  text-align: right;
+
+  z-index: 10;
+  padding: 0.8rem;
+  a {
+    cursor: pointer;
+    padding: 2rem 0;
+    @include breakpoint(s) {
+      margin: 1rem 1rem;
+      font-size: 1.5rem;
+    }
+    @include breakpoint(m) {
+      margin: 2rem 1rem;
+      font-size: 2rem;
+      padding: 1rem 0;
+    }
+    @include breakpoint(l) {
+      margin: 1rem 2rem;
+      font-size: 2rem;
+      padding: 1rem 0;
+    }
+    &:hover {
+      color: rgba(61, 153, 112, 0.521);
+      transition: 0.8s linear;
+    }
+  }
+  .active {
+    color: rgba(187, 156, 223, 0.767);
+    transition: 0.5s linear;
+  }
+}
+.About {
+  height: 100%;
+  padding: 3rem 0rem 0 1rem;
+  @include breakpoint(m) {
+    padding: 4rem 1rem 0 2rem;
+    height: 100%;
+  }
+  @include breakpoint(l) {
+    padding: 4rem 2rem;
+    height: 100vh;
+  }
+  .pAbout {
+    color: rgb(78, 59, 100);
+    p {
+      font-size: 1.2rem;
+    }
+    @include breakpoint(s) {
+      padding-bottom: 1rem;
+    }
+    @include breakpoint(m) {
+      padding-bottom: 1rem;
+    }
+    @include breakpoint(l) {
+      width: 40rem;
+      padding-left: 2rem;
+    }
+  }
+  .uAbout {
+    color: rgb(78, 59, 100);
+    ul {
+      list-style: none;
+      font-size: 1.2rem;
+      @include breakpoint(l) {
+        margin-left: 20rem;
+        font-size: 1.5rem;
+      }
+    }
+    @include breakpoint(l) {
+      width: 60rem;
+    }
+  }
+  .myInfo {
+    text-align: right;
+    padding-right: 3rem;
+  }
+}
+.textImage {
+  h1 {
+    background-image: url("https://images.pexels.com/photos/1406863/pexels-photo-1406863.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-clip: text;
+    background-position: center bottom;
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 7rem;
+    @include breakpoint(s) {
+      font-size: 4rem;
+    }
+    @include breakpoint(m) {
+      font-size: 5.5rem;
+    }
+    @include breakpoint(l) {
+      font-size: 7rem;
+      margin-top: 1rem;
+    }
+  }
+  h2 {
+    font-size: 3rem;
+    color: rgb(78, 59, 100);
+    display: inline;
+    @include breakpoint(l) {
+      font-size: 4rem;
+    }
+  }
+}
+.wrapper {
+  display: grid;
+  @include breakpoint(s) {
+    grid-template-columns: 1fr;
+  }
+  @include breakpoint(m) {
+    grid-template-columns: 1fr;
+  }
+  @include breakpoint(l) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.Projects {
+  position: relative;
+  padding-top: 5rem;
+  color: white;
+  z-index: 3;
+  width: 100vw;
+  text-align: center;
+  .flexButtons {
+    display: flex;
+  }
+  .textImage {
+    text-align: center;
+    @include breakpoint(l) {
+      text-align: right;
+      margin-right: 10rem;
+      margin-bottom: 3rem;
+    }
+  }
+  .mainData {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    color: rgb(78, 59, 100);
+    border: 0.1rem solid rgba(78, 59, 100, 0.089);
+  }
+}
+.theImage {
+  position: relative;
+  height: 20rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  @include breakpoint(s) {
+    margin: 1rem 0;
+  }
+  @include breakpoint(m) {
+    margin: 2rem 4rem;
+  }
+  @include breakpoint(l) {
+    margin: 2rem;
+  }
+
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+  }
+  &:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    word-wrap: break-word;
+    background-color: rgba(78, 59, 100, 0.815);
+    padding: 2rem 0;
+    opacity: 0;
+    transition: 0.8s linear;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
+.mainButton {
+  background-color: transparent;
+  border: 2px solid rgb(78, 59, 100);
+  border-radius: 0.6em;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #fff;
+  box-shadow: 0 0 40px 40px rgb(78, 59, 100) inset, 0 0 0 0 rgb(78, 59, 100);
+  transition: all 0.8s ease-in-out;
+  margin: 0 2rem;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 rgb(78, 59, 100) inset, 0 0 10px 4px rgb(78, 59, 100);
+    color: rgb(78, 59, 100);
+  }
+}
+
+.Footer {
+  position: relative;
+  padding-top: 5rem;
+  background-color: rgb(78, 59, 100);
+  color: white;
+  z-index: 3;
+  width: 100vw;
+  text-align: center;
+  @include breakpoint(s) {
+    height: 100%;
+  }
+  @include breakpoint(m) {
+    height: 100%;
+  }
+  @include breakpoint(l) {
+    height: 100vh;
+  }
+
+  .boxFooter {
+    display: flex;
+    @include breakpoint(s) {
+      flex-direction: column;
+    }
+    @include breakpoint(m) {
+      flex-direction: column;
+    }
+    @include breakpoint(l) {
+      flex-direction: row;
+    }
+  }
+
+  .myImage {
+    background-image: url("myImage.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+
+    @include breakpoint(s) {
+      margin: 2rem auto;
+      height: 20rem;
+      width: 20rem;
+    }
+    @include breakpoint(m) {
+      margin: 2rem auto;
+      height: 24rem;
+      width: 24rem;
+    }
+    @include breakpoint(l) {
+      margin: 0 8rem;
+      height: 20rem;
+      width: 20rem;
+      z-index: 10;
+    }
+  }
+  .textImage {
+    @include breakpoint(s) {
+    }
+    @include breakpoint(m) {
+      margin-bottom: 2rem;
+    }
+    @include breakpoint(l) {
+      text-align: right;
+      margin-right: 10rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  .myContacts {
+    position: relative;
+    @include breakpoint(s) {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.4rem;
+      margin: 3rem 0;
+    }
+    @include breakpoint(m) {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.8rem;
+      width: 35rem;
+      margin: 3rem auto;
+    }
+    @include breakpoint(l) {
+      display: flex;
+      flex-direction: column;
+      font-size: 2rem;
+      margin: 4rem;
+      width: 35rem;
+    }
+    .contactInfo {
+      width: 100%;
+      @include breakpoint(s) {
+        margin-bottom: 2rem;
+      }
+      @include breakpoint(m) {
+        margin-bottom: 2rem;
+      }
+      @include breakpoint(l) {
+        margin-bottom: 1rem;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  .rights {
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    bottom: 0rem;
+    @include breakpoint(s) {
+      margin-top: 1rem;
+    }
+    @include breakpoint(m) {
+    }
+  }
+}
