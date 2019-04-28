@@ -10,8 +10,8 @@ export default function Projects() {
       </div>
       <div className="wrapper">
         {myData &&
-          myData.map(image => (
-            <div className="mainData">
+          myData.map((image, index) => (
+            <div className="mainData" key={index}>
               <h2>{image.title}</h2>
               <div
                 className="theImage"
