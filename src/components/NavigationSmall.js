@@ -10,7 +10,7 @@ export default function NavigationSmall({ closeButton }) {
         spy={true}
         smooth={true}
         duration={1000}
-        activeClassName="active"
+        activeclassname="active"
       >
         Main
       </Link>
@@ -19,7 +19,7 @@ export default function NavigationSmall({ closeButton }) {
         spy={true}
         smooth={true}
         duration={1000}
-        activeClassName="active"
+        activeclassname="active"
       >
         About
       </Link>
@@ -28,7 +28,7 @@ export default function NavigationSmall({ closeButton }) {
         spy={true}
         smooth={true}
         duration={1000}
-        activeClassName="active"
+        activeclassname="active"
       >
         Projects
       </Link>
@@ -37,7 +37,7 @@ export default function NavigationSmall({ closeButton }) {
         spy={true}
         smooth={true}
         duration={1000}
-        activeClassName="active"
+        activeclassname="active"
       >
         Contacts
       </Link>
