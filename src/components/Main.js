@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Navigation from "./Navigation";
-import windowSize from "react-window-size";
 import NavButton from "./NavButton";
+import { useWindowSize } from "react-hooks-window-size";
 
-function Main(props) {
+export default function Main() {
   const [width, setWidth] = useState("");
+  const size = useWindowSize().width;
   useEffect(() => {
-    setWidth(props.windowWidth > 450 ? true : false);
-  }, [props.windowWidth]);
+    setWidth(size > 699 ? true : false);
+  }, [size]);
   return (
     <div className="App">
       {width ? <Navigation /> : <NavButton />}
@@ -20,4 +21,3 @@ function Main(props) {
     </div>
   );
 }
-export default windowSize(Main);
