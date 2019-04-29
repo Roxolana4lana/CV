@@ -13,12 +13,24 @@
   height: 100vh;
   text-align: center;
   padding: 7rem; }
+@keyframes myTitle {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 0.4; }
+  50% {
+    opacity: 0.6; }
+  75% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1; } }
   .App .Main {
-    background: linear-gradient(to top, rgba(83, 81, 85, 0.568), rgba(224, 219, 230, 0.185));
-    background: -webkit-linear-gradient(to top, rgba(83, 81, 85, 0.568), rgba(224, 219, 230, 0.185));
-    background: -moz-linear-gradient(to top, rgba(83, 81, 85, 0.568), rgba(224, 219, 230, 0.185));
-    background: -ms-linear-gradient(to top, rgba(83, 81, 85, 0.568), rgba(224, 219, 230, 0.185));
-    background: -o-linear-gradient(to top, rgba(83, 81, 85, 0.568), rgba(224, 219, 230, 0.185));
+    animation: myTitle 3s linear;
+    background: linear-gradient(to top, rgba(224, 219, 230, 0), rgba(158, 153, 163, 0.568));
+    background: -webkit-linear-gradient(to top, rgba(224, 219, 230, 0), rgba(158, 153, 163, 0.568));
+    background: -moz-linear-gradient(to top, rgba(224, 219, 230, 0), rgba(158, 153, 163, 0.568));
+    background: -ms-linear-gradient(to top, rgba(224, 219, 230, 0), rgba(158, 153, 163, 0.568));
+    background: -o-linear-gradient(to top, rgba(224, 219, 230, 0), rgba(158, 153, 163, 0.568));
     text-align: center;
     padding: 6rem 0;
     width: 100vw;
@@ -335,10 +347,14 @@
   color: #fff;
   box-shadow: 0 0 40px 40px #4e3b64 inset, 0 0 0 0 #4e3b64;
   transition: all 0.8s ease-in-out;
-  margin: 0 2rem; }
+  margin: 0 2rem;
+  outline: none; }
+  .mainButton a {
+    color: white; }
   .mainButton:hover {
-    box-shadow: 0 0 10px 0 #4e3b64 inset, 0 0 10px 4px #4e3b64;
-    color: #4e3b64; }
+    box-shadow: 0 0 10px 0 #4e3b64 inset, 0 0 10px 4px #4e3b64; }
+    .mainButton:hover a {
+      color: #4e3b64; }
 
 .Footer {
   position: relative;

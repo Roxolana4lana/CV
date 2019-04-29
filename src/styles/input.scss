@@ -17,31 +17,49 @@
   text-align: center;
   padding: 7rem;
 
+  @keyframes myTitle {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.6;
+    }
+    75% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   .Main {
+    animation: myTitle 3s linear;
     background: linear-gradient(
       to top,
-      rgba(83, 81, 85, 0.568),
-      rgba(224, 219, 230, 0.185)
+      rgba(224, 219, 230, 0),
+      rgba(158, 153, 163, 0.568)
     );
     background: -webkit-linear-gradient(
       to top,
-      rgba(83, 81, 85, 0.568),
-      rgba(224, 219, 230, 0.185)
+      rgba(224, 219, 230, 0),
+      rgba(158, 153, 163, 0.568)
     );
     background: -moz-linear-gradient(
       to top,
-      rgba(83, 81, 85, 0.568),
-      rgba(224, 219, 230, 0.185)
+      rgba(224, 219, 230, 0),
+      rgba(158, 153, 163, 0.568)
     );
     background: -ms-linear-gradient(
       to top,
-      rgba(83, 81, 85, 0.568),
-      rgba(224, 219, 230, 0.185)
+      rgba(224, 219, 230, 0),
+      rgba(158, 153, 163, 0.568)
     );
     background: -o-linear-gradient(
       to top,
-      rgba(83, 81, 85, 0.568),
-      rgba(224, 219, 230, 0.185)
+      rgba(224, 219, 230, 0),
+      rgba(158, 153, 163, 0.568)
     );
     text-align: center;
     padding: 6rem 0;
@@ -410,10 +428,16 @@
   box-shadow: 0 0 40px 40px rgb(78, 59, 100) inset, 0 0 0 0 rgb(78, 59, 100);
   transition: all 0.8s ease-in-out;
   margin: 0 2rem;
+  outline: none;
+  a {
+    color: white;
+  }
 
   &:hover {
     box-shadow: 0 0 10px 0 rgb(78, 59, 100) inset, 0 0 10px 4px rgb(78, 59, 100);
-    color: rgb(78, 59, 100);
+    a {
+      color: rgb(78, 59, 100);
+    }
   }
 }
 
