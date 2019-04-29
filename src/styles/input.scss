@@ -35,7 +35,7 @@
     }
   }
   .Main {
-    animation: myTitle 3s linear;
+    animation: myTitle 1.5s linear;
     background: linear-gradient(
       to top,
       rgba(224, 219, 230, 0),
@@ -384,28 +384,23 @@
   @include breakpoint(l) {
     margin: 2rem;
   }
-
-  &:hover {
-    &:after {
-      opacity: 1;
-    }
-  }
-  &:after {
-    content: attr(data-text);
+  .imageData {
+    opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     width: 100%;
-    word-wrap: break-word;
-    background-color: rgba(78, 59, 100, 0.815);
-    padding: 2rem 0;
-    opacity: 0;
-    transition: 0.8s linear;
     color: white;
+    background-color: rgba(78, 59, 100, 0.884);
     font-size: 1rem;
+    padding: 2rem;
     font-weight: bold;
+    transition: 0.8s linear;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
