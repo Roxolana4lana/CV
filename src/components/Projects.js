@@ -18,7 +18,9 @@ export default function Projects() {
                 style={{
                   backgroundImage: `url(${image.name})`
                 }}
-              />
+              >
+                <div className="imageData">{image.data}</div>
+              </div>
               <div className="flexButtons">
                 <Button href={image.href} text="Code" />
                 {image.path && <Button href={image.path} text="Demo" />}
