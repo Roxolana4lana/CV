@@ -18,7 +18,6 @@ export default function Projects() {
                 style={{
                   backgroundImage: `url(${image.name})`
                 }}
-                data-text={image.data}
               />
               <div className="flexButtons">
                 <Button href={image.href} text="Code" />
@@ -30,3 +29,5 @@ export default function Projects() {
     </div>
   );
 }
+
+// data - text={ image.data }
