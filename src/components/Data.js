@@ -7,10 +7,19 @@ import im6 from "../styles/image6.jpg";
 
 const myData = [
   {
+    name: im6,
+    id: 6,
+    data:
+      "Application to search movie by title, or to search popular movies by genres(I've used the movie db api). Usage of hooks, local storage and context.  Styling is created with sass. ",
+    href: "https://github.com/Roxolana4lana/movieapp",
+    path: "https://roxolana4lana.github.io/movieapp/",
+    title: "Movie Search"
+  },
+  {
     name: im1,
     id: 1,
     data:
-      "Created in, backend is not attached to the github, created in python. Project displays information about recipes(you may add your own recipe or get different recipes from the public api food2fork). For navigation purposes I’ve used react-routing.Styling is created with sass, application is responsive.",
+      "Created in react, backend is not attached to the github, created in python. Project displays information about recipes(you may add your own recipe or get different recipes from the public api food2fork). For navigation purposes I’ve used react-routing.Styling is created with sass, application is responsive.",
     href: "https://github.com/Roxolana4lana/recpies",
     title: "Recipe app"
   },
@@ -48,14 +57,6 @@ const myData = [
     href: "https://github.com/Roxolana4lana/imageGallery/tree/master/imageapp",
     path: "https://roxolana4lana.github.io/imageGallery/#/",
     title: "Image Galery"
-  },
-  {
-    name: im6,
-    id: 6,
-    data:
-      "Application to search movie by title, or to search popular movies by genres(I've used the movie db api). Usage of hooks, local storage and context.  Styling is created with sass. ",
-    href: "https://github.com/Roxolana4lana/imageGallery/tree/master/imageapp",
-    title: "Movies Search"
   }
 ];
 export default myData;
